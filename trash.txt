@@ -1,0 +1,50 @@
+BSGraph:
+def __init__:
+    param: config
+    init actmovies and edges, out file path, outfile ruler.
+def readActMovfile(self, inputfile):
+    read file else throw exception finally close file and exit from program.
+    split each line using /
+    create node and edge.
+    handle empty file.
+
+def writeOutput(self, filePath, data):
+    create header ruler, footer ruler, append to data,
+     write to file else throw exception finally close file.
+
+def createNodeEdge(self, movie, actor):
+    if movie not in array push it. 
+    if actor not in array push it.
+    add relation in adjacency matrix/ edge.
+    
+def displayActMov(self):
+if actmov is not empty
+    separate actor and movie , format , write to output.
+else
+    output no actor or movie available.
+
+
+def displayActorsOfMovie(self, movie):
+    if actmov is not empty:
+        get movie index if not return message , return cols with 1 else return message.
+    else
+        return message. 
+
+def DFS:
+    implement DFS,
+    return stack, if exist else empty array.
+    
+def findMovieRelation(self, movA, movB):
+    call DFS if return array, 
+
+def findMovieTransRelation(self, movA, movB):
+    call DFS.
+
+Main:
+constructor:
+    Load json else throw error finally close file and exit from program.
+runProgram:
+    run all function and exit the program.
+    read promt file each query line by line and execute the relevant function:
+
+

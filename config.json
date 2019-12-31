@@ -1,0 +1,5 @@
+{
+    "inputFile": "./input/inputPS2.txt",
+    "promptsFile": "./input/promptsPS2.txt",
+    "outputFile": "./output/outputPS2.txt"
+}
