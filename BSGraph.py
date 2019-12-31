@@ -18,8 +18,6 @@ class BSGraph:
             inputFileData.close()
     
     def writeOutput(self, data):
-        header = ''
-        footer = ''
         try:
             data = hr + '\n' + data + '\n' + hr + '\n'
             outputFile = open(filePath,'a+')
@@ -45,6 +43,6 @@ class BSGraph:
             self.edges[movIndex][movIndex] = 0
             self.edges[actIndex][actIndex] = 0
     
-    def adjacencyMatrix():
+    def adjacencyMatrix(self):
         for s in a:
             print(*s)
