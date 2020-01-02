@@ -7,26 +7,13 @@ class BSGraph:
         try:
             inputFileData = open(inputFile, 'r')
             for line in inputFileData:
-                actmovList = line.strip().split('/')
+                actmovList = list(map(lambda word: word.strip(), line.split('/')))
                 if len(actmovList) > 0:
                     movie = "mov_" + actmovList[0].strip()
                     for i in range(1, len(actmovList)):
                         self.createNodeEdge(movie, "act_" + actmovList[i].strip())
-        except Exception as e:
-            self.writeOutput("Exception occured:" + str(e))
-        finally:
-            inputFileData.close()
-    
-    def writeOutput(self, data):
-        try:
-            data = hr + '\n' + data + '\n' + hr + '\n'
-            outputFile = open(filePath,'a+')
-            print >> outputFile, data
-            print(data)
-        except Exception as e:
-            print("Exception occured:" + str(e))
-        finally:
-            outputFile.close()
+        except Exception as e: raise e
+        finally: inputFileData.close()
 
     def createNodeEdge(self, movie, actor):
         movIndex = None
@@ -42,7 +29,6 @@ class BSGraph:
             self.edges[actIndex][movIndex] = 1
             self.edges[movIndex][movIndex] = 0
             self.edges[actIndex][actIndex] = 0
+
+
     
-    def adjacencyMatrix(self):
-        for s in a:
-            print(*s)

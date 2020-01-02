@@ -1,33 +1,60 @@
 from BSGraph import BSGraph
 import json
 import sys
-from constants import fileConstants
+from constants import fileConstants, searchOperation
 
-class Main:
-    def __init__(self,config):
+class Program:
+    def __init__(self):
         try:
             configJson = open('config.json','r')
             self.config = json.load(configJson)
+            self.bsgraph = BSGraph()
+            self.searchFunc = {
+                searchOperation.searchActor : "displayActMov",
+                searchOperation.searchMovie : "displayActorsOfMovie",
+                searchOperation.RMovies: "findMovieRelation",
+                searchOperation.TMovies: "findMovieTransRelation"
+            }
+            self.bsgraph.readActMovfile(self.config.inputFile)
         except Exception as e:
-            print("Exception occured:" + str(e))
+            self.writeOutput(str(e), self.config.outputFilePath, 'constructor')
         finally:
-            config.close()
-            sys.exit()
+            configJson.close()
     
     def run(self):
         try:
             queries = open(self.config[fileConstants.promtFile],'r')
             for query in queries:
-                query = query.strip()
+                commands = list(map(lambda word: word.strip(), query.split(':')))
+
+                
         except Exception as e:
             print("Exception occured:" + str(e))
         finally:
             queries.close()
             sys.exit() 
-            
     
+    def writeOutput(self, data, outputFilePath, functionName):
+        try:
+            formatter = self.config.formatter
+            footer = '\n' + formatter * '-'
+            header = (formatter - len(functionName)+1) * '-' + functionName + (formatter - len(functionName)+1) * '-' + '\n'
+            data = header + data + footer
+            outputFile = open(outputFilePath,'a+')
+            print >> outputFile, data
+            print(data)
+        except Exception as e:
+            print(str(e))
+        finally:
+            outputFile.close()
+    
+    def buildParams(){
+        
+    }
+    
+    def adjacencyMatrix(self, edges):
+        for s in edges:
+            print(*s)
 
-
-
-bsgraph = BSGraph()
-bsgraph.readActMovfile(r".\InputFiles\inputPS2.txt")
+program = Program()
+program.adjacencyMatrix(program.bsgraph.edges)
