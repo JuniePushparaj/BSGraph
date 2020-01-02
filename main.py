@@ -48,9 +48,8 @@ class Program:
         finally:
             outputFile.close()
     
-    def buildParams(){
-        
-    }
+    def buildParams(self):
+        print("")
     
     def adjacencyMatrix(self, edges):
         for s in edges:
