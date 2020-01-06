@@ -2,5 +2,14 @@
     "inputFile": "input\\inputPS2.txt",
     "promptsFile": "input\\promptsPS2.txt",
     "outputFile": "output\\outputPS2.txt",
-    "formatter": 75
+    "formatter": {
+        "symbol":"-",
+        "count": "75"
+    },
+    "searchFunc": {
+        "searchActor": "displayActMov",
+        "searchMovie": "displayActorsOfMovie",
+        "RMovies": "findMovieRelation",
+        "TMovies": "findMovieTransRelation"
+    }
 }

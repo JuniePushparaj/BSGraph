@@ -1,13 +1,13 @@
 import enum
 
 class fileConstants(enum.Enum):
-    inputFile = 'inputFile',
-    promtFile = 'promptsFile',
+    inputFile = 'inputFile'
+    promtFile = 'promptsFile'
     outputFile = 'outputFile'
 
 class searchOperation(enum.Enum):
-    searchActor = 'searchActor',
-    searchMovie = 'searchMovie',
-    RMovies = 'RMovies',
+    searchActor = 'searchActor'
+    searchMovie = 'searchMovie'
+    RMovies = 'RMovies'
     TMovies = 'TMovies'
     

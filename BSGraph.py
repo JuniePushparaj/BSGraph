@@ -1,11 +1,16 @@
+import re
+from helper import FileParser;
+
 class BSGraph:
     def __init__(self):
         self.ActMov = []
         self.edges = []
 
-    def readActMovfile(self, inputFile):
+    def readActMovfile(self, inputFilePath):
         try:
             actMovDict = {}
+            inputFile = FileParser.FileParser(inputFilePath)
+            inputFile.parse() 
             inputFileData = open(inputFile, 'r')
             for line in inputFileData:
                 actmovList = list(map(lambda word: word.strip(), line.split('/')))
@@ -30,6 +35,34 @@ class BSGraph:
             actIndex = self.ActMov.index(actor)
             self.edges[movIndex][actIndex] = 1
             self.edges[actIndex][movIndex] = 1
+    
+    def displayActMov(self):
+        actMovDict = {
+            "movies":{
+                "count": 0,
+                "moviesList": ""
+            },
+            "actors": {
+                "count": 0,
+                "actorsList": ""
+            },
+        }
+        for item in self.ActMov:
+            if(re.search("^mov_")):
+                actMovDict["movies"]["count"] = actMovDict["movies"]["count"] + 1
+                actMovDict["movies"]["moviesList"] = actMovDict["movies"]["moviesList"] + "\n" + item.replace("^mov_","")
+            else:
+                actMovDict["actor"]["count"] = actMovDict["actor"]["count"] + 1
+                actMovDict["actor"]["actorList"] = actMovDict["actor"]["actorList"] + "\n" + item.replace("^act_","")
+
+        return f"""
+        Total no. of movies: {actMovDict["movies"]["count"]}
+        Total no. of actors: { actMovDict["actor"]["count"]}
+        List of movies:
+        {actMovDict["movies"]["moviesList"]}
+        {actMovDict["actor"]["actorList"]}
+        """
+                
 
 
     

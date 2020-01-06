@@ -3,45 +3,39 @@ import json
 import sys
 from constants import fileConstants, searchOperation
 import os
+import helper
+config = helper.ConfigParser.JsonParser(getAbsoluteFilePath("config.json"))
+formatterConfig = config.getConfig('formatter')
+formatter = helper.Formatter.Formatter(formatterConfig.symbol, formatterConfig.count)
+outputter = helper.OutPutter.Outputter(getAbsoluteFilePath(config.getConfig("outputFile")))
+
+def getAbsoluteFilePath(self, relativeFilePath):
+        CWD = os.path.dirname(os.path.abspath(__file__))
+        return os.path.join(CWD, relativeFilePath)
 
 
 class Program:
     def __init__(self):
         try:
-            configJson = open(self.getAbsoluteFilePath("config.json"))
-            config = json.load(configJson)
-            self.inputFile = self.getAbsoluteFilePath(config["inputFile"])
-            self.outputFile = self.getAbsoluteFilePath(config["outputFile"])
-            self.promptsFile = self.getAbsoluteFilePath(config["promptsFile"])
-            self.formatter = config["formatter"]
             self.bsgraph = BSGraph()
-            self.searchFunc = {
-                searchOperation.searchActor : "displayActMov",
-                searchOperation.searchMovie : "displayActorsOfMovie",
-                searchOperation.RMovies: "findMovieRelation",
-                searchOperation.TMovies: "findMovieTransRelation"
-            }
-            self.bsgraph.readActMovfile(self.inputFile)
+            self.bsgraph.readActMovfile(config.getConfig("inputFile"))
         except Exception as e:
-            self.writeOutput("Exception occured: " + str(e), self.outputFile, ' constructor ')
-        finally:
-            configJson.close()
-
-    def getAbsoluteFilePath(self, relativeFilePath):
-        CWD = os.path.dirname(os.path.abspath(__file__))
-        return os.path.join(CWD, relativeFilePath)
-        
+            outputter.writeOutput("Exception occured: " + str(e), formatter.getFormat("Constructor"))   
     
     def run(self):
         try:
+            fnName = ""
             queries = open(self.promptsFile,'r')
             for query in queries:
-                commands = list(map(lambda word: word.strip(), query.split(':'))) 
+                commands = list(map(lambda word: word.strip(), query.split(':')))
+                if len(commands)>1 :
+                    fnName = self.searchFunc[commands[0]]
+                    args = commands[1:len(commands)]
+                    fnName(*args) 
         except Exception as e:
-            print("Exception occured:" + str(e))
+            self.writeOutput("Exception occured: " + str(e), self.outputFile, f' function {fnName} ')
         finally:
             queries.close()
-            sys.exit() 
     
     def writeOutput(self, data, outputFilePath, functionName):
         try:
@@ -65,4 +59,4 @@ class Program:
             print(*s)
 
 program = Program()
-program.adjacencyMatrix(program.bsgraph.edges)
+program.run()
