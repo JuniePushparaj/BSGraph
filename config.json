@@ -7,7 +7,7 @@
         "count": "75"
     },
     "searchFunc": {
-        "searchActor": "displayActMov",
+        "searchActor": "displayMoviesOfActor",
         "searchMovie": "displayActorsOfMovie",
         "RMovies": "findMovieRelation",
         "TMovies": "findMovieTransRelation"

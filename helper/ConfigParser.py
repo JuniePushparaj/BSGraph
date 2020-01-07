@@ -15,4 +15,4 @@ class JsonParser:
             return self.config[key]
         else:
             raise Exception("key not found in config")
-
+        

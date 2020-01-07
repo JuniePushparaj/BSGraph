@@ -1,3 +1,54 @@
---------------------------- function searchActor ---------------------------
-Exception occured: 'searchActor'
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Aamir Khan
+List of Movies:
+Dangal
+PK
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Sanjay Dutt
+List of Movies:
+Munna Bhai MBBS
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: Gully Boy
+List of Actors:
+Alia Bhat
+Ranveer Singh
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: PK
+List of Actors:
+Aamir Khan
+Anushka Sharma
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Aamir Khan
+List of Movies:
+Dangal
+PK
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Sanjay Dutt
+List of Movies:
+Munna Bhai MBBS
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: Gully Boy
+List of Actors:
+Alia Bhat
+Ranveer Singh
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: PK
+List of Actors:
+Aamir Khan
+Anushka Sharma
+
 ---------------------------------------------------------------------------
