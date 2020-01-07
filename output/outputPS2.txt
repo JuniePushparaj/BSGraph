@@ -1,3 +1,38 @@
+------------------------- function displayActMov -------------------------
+Total no. of movies: 9
+Total no. of actors: 16
+
+List of movies:
+
+Dangal
+Sanju
+PK
+Munna Bhai MBBS
+Zindagi Na Milegi Dobara
+ADHM
+Kesari
+Gully Boy
+Highway
+
+List of actors:
+
+Aamir Khan
+Fatima Sana
+Ranbir Kapoor
+Dia Mirza
+Anushka Sharma
+Sanjay Dutt
+Arshad Warsi
+Farhan Akhtar
+Katrina Kaif
+Anushka SharmaKrish
+Hritik
+Akshay Kumar
+Parineeti Chopra
+Alia Bhat
+Ranveer Singh
+Randeep Hooda
+---------------------------------------------------------------------------
 ---------------------- function displayMoviesOfActor ----------------------
 Actor name: Aamir Khan
 List of Movies:
@@ -14,41 +49,14 @@ Munna Bhai MBBS
 ---------------------- function displayActorsOfMovie ----------------------
 Movie name: Gully Boy
 List of Actors:
-Alia Bhat
-Ranveer Singh
+act_Alia Bhat
+act_Ranveer Singh
 
 ---------------------------------------------------------------------------
 ---------------------- function displayActorsOfMovie ----------------------
 Movie name: PK
 List of Actors:
-Aamir Khan
-Anushka Sharma
-
----------------------------------------------------------------------------
----------------------- function displayMoviesOfActor ----------------------
-Actor name: Aamir Khan
-List of Movies:
-Dangal
-PK
-
----------------------------------------------------------------------------
----------------------- function displayMoviesOfActor ----------------------
-Actor name: Sanjay Dutt
-List of Movies:
-Munna Bhai MBBS
-
----------------------------------------------------------------------------
----------------------- function displayActorsOfMovie ----------------------
-Movie name: Gully Boy
-List of Actors:
-Alia Bhat
-Ranveer Singh
-
----------------------------------------------------------------------------
----------------------- function displayActorsOfMovie ----------------------
-Movie name: PK
-List of Actors:
-Aamir Khan
-Anushka Sharma
+act_Aamir Khan
+act_Anushka Sharma
 
 ---------------------------------------------------------------------------
