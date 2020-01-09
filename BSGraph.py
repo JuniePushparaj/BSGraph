@@ -1,5 +1,6 @@
 import re
 from constants import searchItem
+from helper.BFS import BFS
 
 
 class BSGraph:
@@ -15,7 +16,7 @@ class BSGraph:
         output = ""
         displayMsg1 = "Actor" if category == searchItem.actor.value else "Movie"
         displayMsg2 = "Movies" if category == searchItem.actor.value else "Actors"
-        matchText = searchItem.movie.value  if category == searchItem.actor.value else searchItem.movie.value 
+        matchText = searchItem.movie.value  if category == searchItem.actor.value else searchItem.actor.value 
         if scrchItem not in self.ActMov:
             return f"{displayMsg1} \"{actmov}\" not found."
         else:
@@ -95,3 +96,19 @@ class BSGraph:
     
     def displayMoviesOfActor(self, actor):
         return self.findActorsRMovies(actor, searchItem.actor.value)
+    
+    def findMovieTransRelation(self, movA, movB):
+        try:
+            bfs = BFS()
+            movAIndex = self.ActMov.index("mov_" + movA)
+            movBIndex = self.ActMov.index("mov_" + movB)
+            pathList = bfs.getPath(self.edges, movAIndex, movBIndex)
+            if len(pathList) > 0:
+                path = "->".join(map(lambda index: re.sub(searchItem.movie.value + "|" + searchItem.actor.value,"",self.ActMov[index]),pathList))
+                return f"Movie A: {movA}\nMovie B: {movB}\nRelated: Yes, {path}"
+            else:
+                return f"Movie A: {movA}\nMovie B: {movB}\nRelated: No, No relation exist between {movA} and {movB}"
+        except ValueError:
+            raise Exception("Any one of movie may not present.")
+        except Exception as e:
+            raise e

@@ -2,3 +2,5 @@ searchActor: Aamir Khan
 searchActor: Sanjay Dutt
 searchMovie: Gully Boy
 searchMovie: PK
+TMovies: Dangal : ADHM
+TMovies: Sanju : Krish

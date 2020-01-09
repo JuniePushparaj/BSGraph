@@ -4,7 +4,7 @@
     "outputFile": "output\\outputPS2.txt",
     "formatter": {
         "symbol":"-",
-        "count": "75"
+        "count": "75    "
     },
     "searchFunc": {
         "searchActor": "displayMoviesOfActor",

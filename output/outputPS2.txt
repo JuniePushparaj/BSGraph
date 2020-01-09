@@ -1,6 +1,6 @@
 ------------------------- function displayActMov -------------------------
-Total no. of movies: 9
-Total no. of actors: 16
+Total no. of movies: 10
+Total no. of actors: 15
 
 List of movies:
 
@@ -10,6 +10,7 @@ PK
 Munna Bhai MBBS
 Zindagi Na Milegi Dobara
 ADHM
+Krish
 Kesari
 Gully Boy
 Highway
@@ -25,7 +26,6 @@ Sanjay Dutt
 Arshad Warsi
 Farhan Akhtar
 Katrina Kaif
-Anushka SharmaKrish
 Hritik
 Akshay Kumar
 Parineeti Chopra
@@ -49,14 +49,24 @@ Munna Bhai MBBS
 ---------------------- function displayActorsOfMovie ----------------------
 Movie name: Gully Boy
 List of Actors:
-act_Alia Bhat
-act_Ranveer Singh
+Alia Bhat
+Ranveer Singh
 
 ---------------------------------------------------------------------------
 ---------------------- function displayActorsOfMovie ----------------------
 Movie name: PK
 List of Actors:
-act_Aamir Khan
-act_Anushka Sharma
+Aamir Khan
+Anushka Sharma
 
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+Movie A: Dangal
+Movie B: ADHM
+Related: Yes, Dangal->Aamir Khan->PK->Anushka Sharma->ADHM
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+Movie A: Sanju
+Movie B: Krish
+Related: No, No path exist between Sanju and Krish
 ---------------------------------------------------------------------------
