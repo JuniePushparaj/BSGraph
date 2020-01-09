@@ -107,8 +107,8 @@ class BSGraph:
                 path = "->".join(map(lambda index: re.sub(searchItem.movie.value + "|" + searchItem.actor.value,"",self.ActMov[index]),pathList))
                 return f"Movie A: {movA}\nMovie B: {movB}\nRelated: Yes, {path}"
             else:
-                return f"Movie A: {movA}\nMovie B: {movB}\nRelated: No, No relation exist between {movA} and {movB}"
+                return f"No relation exist between {movA} and {movB}."
         except ValueError:
-            raise Exception("Any one of movie may not present.")
+            return "Any one of the movie may not be present."
         except Exception as e:
             raise e

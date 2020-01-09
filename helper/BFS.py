@@ -12,13 +12,12 @@ class BFS:
         path = []
         pathExists = False
         while(not self.queue.isEmpty()):
-            adjacentNodes = [index for index, value in enumerate(
-                edges[self.queue.front.data]) if value == 1 and visitedNodes[index] == 0]
+            adjacentNodes = [index for index, value in enumerate( edges[self.queue.front.data]) if value == 1 and visitedNodes[index] == 0]
             pathNode = self.queue.DeQueue()
             if len(adjacentNodes) > 0:
                 path.append(pathNode)
             if pathNode == destination:
-                pathExists= True
+                pathExists = True
                 break
             for node in adjacentNodes:
                 self.queue.EnQueue(node)
@@ -27,3 +26,21 @@ class BFS:
             return path
         else:
             return []
+    
+    def findRelation(self, edges, source, destination):
+        self.queue.EnQueue(source)
+        visitedNodes = [source]
+        pathExists = False
+        while(not self.queue.isEmpty()):
+            adjacentNodes = [index for index, value in enumerate( edges[self.queue.front.data]) if value == 1 and index not in visitedNodes]
+            pathNode = self.queue.DeQueue()
+            if pathNode == destination:
+                pathExists = True
+            for node in adjacentNodes:
+                self.queue.EnQueue(node)
+                visitedNodes.append(node)
+        if pathExists:
+            return self.queue.front.data
+        else:
+            return None
+
