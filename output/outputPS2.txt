@@ -33,17 +33,112 @@ Alia Bhat
 Ranveer Singh
 Randeep Hooda
 ---------------------------------------------------------------------------
+------------------------------ Invalid query ------------------------------
+Query:searchActor:  Aamir Khan: Alia Bhat
+
+Message: More or no arguments.
+---------------------------------------------------------------------------
 ---------------------- function displayMoviesOfActor ----------------------
-Actor name: Aamir Khan
+Actor name: Akshay Kumar
+List of Movies:
+Kesari
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Alia Bhat
+List of Movies:
+Gully Boy
+Highway
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor "SRK" not found.
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Anushka Sharma
+List of Movies:
+PK
+ADHM
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Arshad Warsi
+List of Movies:
+Munna Bhai MBBS
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Dia Mirza
+List of Movies:
+Sanju
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Farhan Akhtar
+List of Movies:
+Zindagi Na Milegi Dobara
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Fatima Sana
 List of Movies:
 Dangal
-PK
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Hritik
+List of Movies:
+Krish
+
+---------------------------------------------------------------------------
+------------------------------ Invalid query ------------------------------
+Query:searchActors:  Katrina Kaif
+
+Message: Invalid operation performed.
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Parineeti Chopra
+List of Movies:
+Kesari
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Ranbir Kapoor
+List of Movies:
+Sanju
+ADHM
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Randeep Hooda
+List of Movies:
+Highway
+
+---------------------------------------------------------------------------
+---------------------- function displayMoviesOfActor ----------------------
+Actor name: Ranveer Singh
+List of Movies:
+Gully Boy
 
 ---------------------------------------------------------------------------
 ---------------------- function displayMoviesOfActor ----------------------
 Actor name: Sanjay Dutt
 List of Movies:
 Munna Bhai MBBS
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: ADHM
+List of Actors:
+Ranbir Kapoor
+Anushka Sharma
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: Dangal
+List of Actors:
+Aamir Khan
+Fatima Sana
 
 ---------------------------------------------------------------------------
 ---------------------- function displayActorsOfMovie ----------------------
@@ -54,11 +149,227 @@ Ranveer Singh
 
 ---------------------------------------------------------------------------
 ---------------------- function displayActorsOfMovie ----------------------
+Movie name: Highway
+List of Actors:
+Alia Bhat
+Randeep Hooda
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: Kesari
+List of Actors:
+Akshay Kumar
+Parineeti Chopra
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: Krish
+List of Actors:
+Hritik
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: Munna Bhai MBBS
+List of Actors:
+Sanjay Dutt
+Arshad Warsi
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
 Movie name: PK
 List of Actors:
 Aamir Khan
 Anushka Sharma
 
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: Sanju
+List of Actors:
+Ranbir Kapoor
+Dia Mirza
+
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie "TK" not found.
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie "" not found.
+---------------------------------------------------------------------------
+---------------------- function displayActorsOfMovie ----------------------
+Movie name: Zindagi Na Milegi Dobara
+List of Actors:
+Farhan Akhtar
+Katrina Kaif
+
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Dangal and Sanju.
+---------------------------------------------------------------------------
+------------------------------ Invalid query ------------------------------
+Query:QMovies: Dangal : Sanju
+
+Message: Invalid operation performed.
+---------------------------------------------------------------------------
+------------------------------ Invalid query ------------------------------
+Query:RMovies: Dangal : Sanju : Dangal
+
+Message: More or no arguments.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+Movie A: Dangal
+Movie B: PK
+Related: Yes, Aamir Khan
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Dangal and Munna Bhai MBBS.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Dangal and Zindagi Na Milegi Dobara.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Dangal and ADHM.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Dangal and Krish.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Dangal and Kesari.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Dangal and Gully Boy.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Dangal and Highway.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Sanju and PK.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Sanju and Munna Bhai MBBS.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Sanju and Zindagi Na Milegi Dobara.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+Movie A: Sanju
+Movie B: ADHM
+Related: Yes, Ranbir Kapoor
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Sanju and Krish.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Sanju and Kesari.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Sanju and Gully Boy.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Sanju and Highway.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between PK and Munna Bhai MBBS.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between PK and Zindagi Na Milegi Dobara.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+Movie A: PK
+Movie B: ADHM
+Related: Yes, Anushka Sharma
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between PK and Krish.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between PK and Kesari.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between PK and Gully Boy.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between PK and Highway.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Munna Bhai MBBS and Zindagi Na Milegi Dobara.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Munna Bhai MBBS and ADHM.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Munna Bhai MBBS and Krish.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Munna Bhai MBBS and Kesari.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Munna Bhai MBBS and Gully Boy.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Munna Bhai MBBS and Highway.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Zindagi Na Milegi Dobara and ADHM.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Zindagi Na Milegi Dobara and Krish.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Zindagi Na Milegi Dobara and Kesari.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Zindagi Na Milegi Dobara and Gully Boy.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Zindagi Na Milegi Dobara and Highway.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between ADHM and Krish.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between ADHM and Kesari.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between ADHM and Gully Boy.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between ADHM and Highway.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Krish and Kesari.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Krish and Gully Boy.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Krish and Highway.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Kesari and Gully Boy.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+No relation exist between Kesari and Highway.
+---------------------------------------------------------------------------
+----------------------- function findMovieRelation -----------------------
+Movie A: Gully Boy
+Movie B: Highway
+Related: Yes, Alia Bhat
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+Movie A: Dangal
+Movie B: Sanju
+Related: Yes, Dangal->Aamir Khan->PK->Anushka Sharma->ADHM->Ranbir Kapoor->Sanju
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+Movie A: Dangal
+Movie B: PK
+Related: Yes, Dangal->Aamir Khan->PK
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Dangal and Munna Bhai MBBS.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Dangal and Zindagi Na Milegi Dobara.
 ---------------------------------------------------------------------------
 --------------------- function findMovieTransRelation ---------------------
 Movie A: Dangal
@@ -66,7 +377,130 @@ Movie B: ADHM
 Related: Yes, Dangal->Aamir Khan->PK->Anushka Sharma->ADHM
 ---------------------------------------------------------------------------
 --------------------- function findMovieTransRelation ---------------------
+No relation exist between Dangal and Krish.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Dangal and Kesari.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Dangal and Gully Boy.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Dangal and Highway.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
 Movie A: Sanju
-Movie B: Krish
-Related: No, No path exist between Sanju and Krish
+Movie B: PK
+Related: Yes, Sanju->Ranbir Kapoor->ADHM->Anushka Sharma->PK
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Sanju and Munna Bhai MBBS.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Sanju and Zindagi Na Milegi Dobara.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+Movie A: Sanju
+Movie B: ADHM
+Related: Yes, Sanju->Ranbir Kapoor->ADHM
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Sanju and Krish.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Sanju and Kesari.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Sanju and Gully Boy.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Sanju and Highway.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between PK and Munna Bhai MBBS.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between PK and Zindagi Na Milegi Dobara.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+Movie A: PK
+Movie B: ADHM
+Related: Yes, PK->Anushka Sharma->ADHM
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between PK and Krish.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between PK and Kesari.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between PK and Gully Boy.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between PK and Highway.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Munna Bhai MBBS and Zindagi Na Milegi Dobara.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Munna Bhai MBBS and ADHM.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Munna Bhai MBBS and Krish.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Munna Bhai MBBS and Kesari.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Munna Bhai MBBS and Gully Boy.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Munna Bhai MBBS and Highway.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Zindagi Na Milegi Dobara and ADHM.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Zindagi Na Milegi Dobara and Krish.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Zindagi Na Milegi Dobara and Kesari.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Zindagi Na Milegi Dobara and Gully Boy.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Zindagi Na Milegi Dobara and Highway.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between ADHM and Krish.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between ADHM and Kesari.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between ADHM and Gully Boy.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between ADHM and Highway.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Krish and Kesari.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Krish and Gully Boy.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Krish and Highway.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Kesari and Gully Boy.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+No relation exist between Kesari and Highway.
+---------------------------------------------------------------------------
+--------------------- function findMovieTransRelation ---------------------
+Movie A: Gully Boy
+Movie B: Highway
+Related: Yes, Gully Boy->Alia Bhat->Highway
 ---------------------------------------------------------------------------

@@ -4,12 +4,25 @@
     "outputFile": "output\\outputPS2.txt",
     "formatter": {
         "symbol":"-",
-        "count": "75    "
+        "count": "75"
     },
     "searchFunc": {
-        "searchActor": "displayMoviesOfActor",
-        "searchMovie": "displayActorsOfMovie",
-        "RMovies": "findMovieRelation",
-        "TMovies": "findMovieTransRelation"
-    }
+        "searchActor": {
+            "param" : 1,
+            "callingFunc": "displayMoviesOfActor"
+        },
+        "searchMovie": {
+            "param" : 1,
+            "callingFunc": "displayActorsOfMovie"
+        },
+        "RMovies": {
+            "param" : 2,
+            "callingFunc": "findMovieRelation"
+        },
+        "TMovies":{
+            "param" : 2,
+            "callingFunc": "findMovieTransRelation"
+        }
+    },
+    "operationAllowed": ["searchActor", "searchMovie", "RMovies", "TMovies" ]
 }

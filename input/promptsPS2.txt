@@ -1,6 +1,120 @@
-searchActor: Aamir Khan
-searchActor: Sanjay Dutt
+searchActor:  Aamir Khan: Alia Bhat
+searchActor:  Akshay Kumar
+searchActor:  Alia Bhat
+searchActor:  SRK
+searchActor:  Anushka Sharma
+searchActor:  Arshad Warsi
+searchActor:  Dia Mirza
+searchActor:  Farhan Akhtar
+searchActor:  Fatima Sana
+searchActor:  Hritik
+searchActors:  Katrina Kaif
+searchActor:  Parineeti Chopra
+searchActor:  Ranbir Kapoor
+searchActor:  Randeep Hooda
+searchActor:  Ranveer Singh
+searchActor:  Sanjay Dutt
+searchMovie: ADHM
+searchMovie: Dangal
 searchMovie: Gully Boy
+searchMovie: Highway
+searchMovie: Kesari
+searchMovie: Krish
+searchMovie: Munna Bhai MBBS
 searchMovie: PK
+searchMovie: Sanju
+searchMovie: TK
+searchMovie: 
+searchMovie: Zindagi Na Milegi Dobara
+RMovies: Dangal : Sanju
+QMovies: Dangal : Sanju
+RMovies: Dangal : Sanju : Dangal
+RMovies: Dangal : PK
+RMovies: Dangal : Munna Bhai MBBS
+RMovies: Dangal : Zindagi Na Milegi Dobara
+RMovies: Dangal : ADHM
+RMovies: Dangal : Krish
+RMovies: Dangal : Kesari
+RMovies: Dangal : Gully Boy
+RMovies: Dangal : Highway
+RMovies: Sanju : PK
+RMovies: Sanju : Munna Bhai MBBS
+RMovies: Sanju : Zindagi Na Milegi Dobara
+RMovies: Sanju : ADHM
+RMovies: Sanju : Krish
+RMovies: Sanju : Kesari
+RMovies: Sanju : Gully Boy
+RMovies: Sanju : Highway
+RMovies: PK : Munna Bhai MBBS
+RMovies: PK : Zindagi Na Milegi Dobara
+RMovies: PK : ADHM
+RMovies: PK : Krish
+RMovies: PK : Kesari
+RMovies: PK : Gully Boy
+RMovies: PK : Highway
+RMovies: Munna Bhai MBBS : Zindagi Na Milegi Dobara
+RMovies: Munna Bhai MBBS : ADHM
+RMovies: Munna Bhai MBBS : Krish
+RMovies: Munna Bhai MBBS : Kesari
+RMovies: Munna Bhai MBBS : Gully Boy
+RMovies: Munna Bhai MBBS : Highway
+RMovies: Zindagi Na Milegi Dobara : ADHM
+RMovies: Zindagi Na Milegi Dobara : Krish
+RMovies: Zindagi Na Milegi Dobara : Kesari
+RMovies: Zindagi Na Milegi Dobara : Gully Boy
+RMovies: Zindagi Na Milegi Dobara : Highway
+RMovies: ADHM : Krish
+RMovies: ADHM : Kesari
+RMovies: ADHM : Gully Boy
+RMovies: ADHM : Highway
+RMovies: Krish : Kesari
+RMovies: Krish : Gully Boy
+RMovies: Krish : Highway
+RMovies: Kesari : Gully Boy
+RMovies: Kesari : Highway
+RMovies: Gully Boy : Highway
+TMovies: Dangal : Sanju
+TMovies: Dangal : PK
+TMovies: Dangal : Munna Bhai MBBS
+TMovies: Dangal : Zindagi Na Milegi Dobara
 TMovies: Dangal : ADHM
+TMovies: Dangal : Krish
+TMovies: Dangal : Kesari
+TMovies: Dangal : Gully Boy
+TMovies: Dangal : Highway
+TMovies: Sanju : PK
+TMovies: Sanju : Munna Bhai MBBS
+TMovies: Sanju : Zindagi Na Milegi Dobara
+TMovies: Sanju : ADHM
 TMovies: Sanju : Krish
+TMovies: Sanju : Kesari
+TMovies: Sanju : Gully Boy
+TMovies: Sanju : Highway
+TMovies: PK : Munna Bhai MBBS
+TMovies: PK : Zindagi Na Milegi Dobara
+TMovies: PK : ADHM
+TMovies: PK : Krish
+TMovies: PK : Kesari
+TMovies: PK : Gully Boy
+TMovies: PK : Highway
+TMovies: Munna Bhai MBBS : Zindagi Na Milegi Dobara
+TMovies: Munna Bhai MBBS : ADHM
+TMovies: Munna Bhai MBBS : Krish
+TMovies: Munna Bhai MBBS : Kesari
+TMovies: Munna Bhai MBBS : Gully Boy
+TMovies: Munna Bhai MBBS : Highway
+TMovies: Zindagi Na Milegi Dobara : ADHM
+TMovies: Zindagi Na Milegi Dobara : Krish
+TMovies: Zindagi Na Milegi Dobara : Kesari
+TMovies: Zindagi Na Milegi Dobara : Gully Boy
+TMovies: Zindagi Na Milegi Dobara : Highway
+TMovies: ADHM : Krish
+TMovies: ADHM : Kesari
+TMovies: ADHM : Gully Boy
+TMovies: ADHM : Highway
+TMovies: Krish : Kesari
+TMovies: Krish : Gully Boy
+TMovies: Krish : Highway
+TMovies: Kesari : Gully Boy
+TMovies: Kesari : Highway
+TMovies: Gully Boy : Highway

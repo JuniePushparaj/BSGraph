@@ -1,3 +1,4 @@
+# Line formatter of outputter. Draw header and footer with given symbol and count.
 class Formatter:
     def __init__(self, symbol, count):
         self.symbol = symbol

@@ -1,3 +1,0 @@
-displayActMov
-displayMoviesOfActor
-displayActorsOfMovie

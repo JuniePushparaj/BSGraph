@@ -1,3 +1,4 @@
+#Write data to configured output file with formatter.
 class Outputter:
 
     def __init__(self, outFilePath, formatter):
